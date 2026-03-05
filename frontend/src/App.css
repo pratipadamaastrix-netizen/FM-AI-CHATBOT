@@ -1,0 +1,86 @@
+/* Full Screen Gradient Background */
+.chat-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Chat Card */
+.chat-card {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: white;
+}
+
+/* Header */
+.chat-header {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 20px;
+}
+
+/* Chat Body */
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Bubble Base */
+.chat-bubble {
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  border-radius: 20px;
+  font-size: 14px;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* User Bubble */
+.chat-bubble.user {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #1e88e5, #1565c0);
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* Bot Bubble */
+.chat-bubble.bot {
+  align-self: flex-start;
+  background: #ffffff;
+  color: #333;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Input Section */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
