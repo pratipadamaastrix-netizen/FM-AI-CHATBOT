@@ -23,7 +23,6 @@ The chatbot integrates AI models to understand user queries and provide response
 
 Supported AI models:
 - DeepSeek API
-- Ollama (phi3:mini for local inference)
 - OpenAI (optional)
 
 ---
@@ -38,11 +37,9 @@ Supported AI models:
 
 ### AI
 - DeepSeek API
-- Ollama Local Models
 
 ### Frontend
 - React.js
-- HTML
 - CSS
 - JavaScript
 
